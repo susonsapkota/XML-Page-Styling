@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WaveTech>
+  <company_details>
+    <logo> </logo>
+    <name>WaveTech Solutions</name>
+    <address>Gyaneshor,10.Kathmandu</address>
+    <CEO>Nischal Man Pradhan</CEO>
+  </company_details>
+  <departments>
+    <finance>
+      <vice_president_finance>Hari Man Pradhan</vice_president_finance>
+      <accounting>Bhaskar Gyawali</accounting>
+      <treasury>Abhishek Dangol</treasury>
+    </finance>
+    <HR>
+      <vice_president_HR>Alok Pandey</vice_president_HR>
+      <operation_and_recruitment>Ashok Koirala</operation_and_recruitment>
+      <staff_development>Prabhat Ligal</staff_development>
+    </HR>
+    <marketing>
+      <vice_president_marketing>Naresh Man Pradhan</vice_president_marketing>
+      <customer_service>Sudarshan Gora</customer_service>
+      <sales>Aayush Bati</sales>
+    </marketing>
+    <research_and_development>
+      <vice_president_RandD>Bipana Shahi</vice_president_RandD>
+      <research>Kamal Bhattarai</research>
+      <develop>Kamlesh Dohi</develop>
+    </research_and_development>
+    <development>
+      <web_development prj_mgr="Rohit Man Shrestha">
+        <team web_dev_id="1" project_id="proj01">
+          <manager>Sandesh Karmacharya</manager>
+          <developer>Prerana Tamrakar</developer>
+          <developer>Degendra Sivakoti</developer>
+          <intern>Binod Shrestha</intern>
+        </team>
+        <team web_dev_id="2">
+          <manager>Ram Prashad Rai</manager>
+          <developer>Kapil Devkota</developer>
+          <developer>Rajesh Shah</developer>
+          <developer>Surya Subba</developer>
+          <developer>Ankur Maharjan</developer>
+        </team>
+        <team web_dev_id="3" project_id="proj02">
+          <manager>Sujan Subedi</manager>
+          <developer>Ajaya Karki</developer>
+          <developer>Aayush Shrestha</developer>
+          <developer>Sabin Pudasaini</developer>
+          <developer>Pradip Mandal</developer>
+          <developer>Ramesh Shuwal</developer>
+          <intern>Sushant Koirala</intern>
+        </team>
+      </web_development>
+      <mob_development prj_mgr="Mahesh Pandey">
+        <team mob_dev_id="1" project_id="proj02">
+          <manager>Dinesh Kafle</manager>
+          <developer>Laxman KC</developer>
+          <developer>Prakash Gautam</developer>
+          <developer>Amit Sharma</developer>
+        </team>
+        <team mob_dev_id="2">
+          <manager>Binit Koirala</manager>
+          <developer>Raju Mandal</developer>
+          <developer>Bimal Bhattarai</developer>
+        </team>
+        <team mob_dev_id="3">
+          <manager>Aayush Raj Sahi</manager>
+          <developer>Ganesh Acharya</developer>
+          <developer>Lila Mani Poudel</developer>
+          <developer>Asmita Poudel</developer>
+          <developer>Priyanka Ranjit</developer>
+          <intern>Sovit Rimal</intern>
+        </team>
+      </mob_development>
+    </development>
+  </departments>
+  <projects>
+    <project project_id="proj01">
+      <name>Student Mgmt. System</name>
+      <details>This system is for managing student details.</details>
+    </project>
+    <project project_id="proj02">
+      <name>Mobile Banking System</name>
+      <details>Mobile banking app for NIC Aisa Bank.</details>
+    </project>
+  </projects>
+</WaveTech>

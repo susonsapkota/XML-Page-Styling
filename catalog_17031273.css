@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Press+Start+2P|Roboto');
+
+* {
+    display: block;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    25% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    50% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    75% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+}
+
+logo {
+
+    position: center;
+    flex-shrink: auto;
+    padding: 205px ;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: #F1F1F1;
+    margin: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgb(46, 74, 117);
+    z-index: 4;
+    margin-top: 35px;
+    background-image: url('logo.png');
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+    background-position: center 0%;
+
+  
+}
+
+company_details {
+    flex-shrink: auto;
+    padding: 25px;
+    background-color: rgb(241, 241, 241);
+    margin: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgb(46, 74, 117);
+    z-index: 2;
+    margin-top: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+company_details > name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: xx-large;
+    line-height: 3em;
+}
+
+address {
+    font-family: 'Acme', sans-serif;
+    font-size: medium;
+    margin-top: 1em;
+    margin-bottom: 11em;
+}
+CEO::before
+{
+    content: "CEO : "
+}
+
+CEO {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 38%;
+    border-radius: 50%;
+    box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+    z-index: 2;
+    background-image: url('ceo.jpg');  
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    line-height: 25em;
+    font-family: 'Acme', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 5px rgb(0, 0, 255); 
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+
+departments {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(241, 241, 241);
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgb(46, 74, 117);
+    z-index: 2;
+    margin-top: 0px;
+}
+
+
+finance,HR,marketing,research_and_development{
+
+flex: 1 0 21%; 
+  margin: 5px;
+  height: 100px;
+  background-color:  rgb(181, 190, 198);;
+  margin: 25px;
+  border-radius: 6px;
+  box-shadow: 4px 5px 15px -7px rgb(46, 74, 117);
+  z-index: 2;
+  margin-top: 35px;
+  padding: 4px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.5em;
+  height: 10em;
+  
+}
+
+finance:hover,HR:hover,marketing:hover,research_and_development:hover,CEO:hover{
+    animation: shake 0.3s;
+}
+finance::before
+{
+    content: "Finance";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: rgb(112, 138, 231);
+}
+
+HR::before
+{
+    content: "Human Resource";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: rgb(112, 138, 231);
+}
+marketing::before
+{
+    content: "Marketing";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: rgb(96, 127, 238);
+}
+research_and_development::before
+{
+    content: "Research and Development";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: rgb(112, 138, 231);
+}
+
+/* for Listing  */
+vice_president_finance::before,vice_president_HR::before,vice_president_RandD::before,vice_president_marketing::before{
+    content: "1. ";
+}
+
+accounting::before,operation_and_recruitment::before,customer_service::before,research::before{
+    content: "2. ";
+}
+
+treasury::before,staff_development::before,sales::before,develop::before{
+    content: "3. ";
+}
+
+ /* for post */
+vice_president_finance::after,vice_president_HR::after,vice_president_RandD::after,vice_president_marketing::after{
+    content: " (vice-president)";
+}
+accounting::after{
+    content: " - Accounting";
+}
+operation_and_recruitment::after{
+    content: " - Operation and Recruitment";
+}
+customer_service::after{
+    content: " - Customer Service";
+}
+research::after{
+    content: " - Research";
+}
+treasury::after{
+    content: " - Treasury";
+}
+staff_development::after{
+    content: " - Staff Development";
+}
+sales::after{
+    content: " - Sales";
+}
+develop::after{
+    content: " - Development";
+}
+
+development {
+
+    background-color: rgb(181, 190, 198);
+    margin: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+    z-index: 2;
+    margin-top: 35px;
+    width: 100%;
+    margin: 35px;
+
+}
+
+
+web_development,mob_development {
+    flex-grow: 5;
+    padding: 25px;
+    background-color: rgb(195, 195, 195);
+    margin: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+    z-index: 2;
+    margin-top: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+web_development::before{
+    content: " Web Development - Rohit Man Shrestha (Project Manager)";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: rgb(112, 138, 231);
+}
+
+mob_development::before{
+    content: " Mobile Development - Mahesh Pandey (Project Manager)";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: rgb(112, 138, 231);
+}
+
+team{
+    flex-grow: 5;
+    padding: 25px;
+    background-color: rgb(245, 245, 245);
+    margin: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+    z-index: 2;
+    margin-top: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: end;
+    background-image: url('team.png');
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+    background-position-x: 10em;
+}
+
+team:hover{
+    animation: shake 0.3s;
+}
+
+
+manager::before{
+    content: "Manager - ";
+    font-weight: bold;
+    color: orange;
+    
+}
+
+developer::before{
+    content: "Developer - ";
+    font-weight: bold;
+   
+}
+
+intern::before{
+    content: "Intern - ";
+    font-weight: bold;
+    color: violet;
+}
+
+team[web_dev_id="1"]::before,team[mob_dev_id="1"]::before{
+    content: "Team 1";
+    font-family: 'Acme', sans-serif;
+    font-size: 27px;
+    
+}
+
+team[web_dev_id="2"]::before,team[mob_dev_id="2"]::before{
+    content: "Team 2";
+    font-family: 'Acme', sans-serif;
+    font-size: 27px;
+}
+
+team[web_dev_id="3"]::before,team[mob_dev_id="3"]::before{
+    content: "Team 3";
+    font-family: 'Acme', sans-serif;
+    font-size: 27px;
+}
+
+
+
+projects{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F1F1F1;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+    z-index: 2;
+    margin-top: 35px;
+}
+
+
+project{
+    flex: 1 0 21%; 
+    margin: 15px;
+    height: 100px;
+    background-color:  #B5BEC6;;
+    margin: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 5px 15px -7px rgba(46, 74, 117, 1);
+    z-index: 2;
+    margin-top: 35px;
+    padding: 4px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    height: auto;
+}
+
+
+project[project_id="proj01"]::before{
+content: " Project 1";
+font-family: 'Acme', sans-serif;
+font-size: 25px;
+padding-left: 0.5em;
+color: orangered;
+}
+
+project[project_id="proj02"]::before{
+    content: " Project 2";
+    font-family: 'Acme', sans-serif;
+    font-size: 25px;
+    padding-left: 0.5em;
+    color: orangered;
+}
+projects>project>name::before{
+    content: " Project Name : ";
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+
+details::before{
+    content: " Project Details : ";
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+
+project:hover{
+    animation: shake 0.3s;
+}
+
+
+
+
+ 

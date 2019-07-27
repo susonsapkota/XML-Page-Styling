@@ -1,0 +1,55 @@
+
+<!ELEMENT WaveTech (company_details,departments,projects)>
+<!ELEMENT company_details (logo,name,address,CEO)>
+
+<!ELEMENT departments (finance,HR,marketing,research_and_development,development)>
+<!ELEMENT projects (project)+>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+
+<!ELEMENT CEO (#PCDATA)>
+
+<!ELEMENT finance (vice_president_finance,accounting,treasury)>
+<!ELEMENT vice_president_finance (#PCDATA)>
+<!ELEMENT accounting (#PCDATA)>
+<!ELEMENT treasury (#PCDATA)>
+
+
+<!ELEMENT HR (vice_president_HR,operation_and_recruitment,staff_development)>
+<!ELEMENT vice_president_HR (#PCDATA)>
+<!ELEMENT operation_and_recruitment (#PCDATA)>
+<!ELEMENT staff_development (#PCDATA)>
+
+
+<!ELEMENT marketing (vice_president_marketing,customer_service,sales)>
+<!ELEMENT vice_president_marketing (#PCDATA)>
+<!ELEMENT customer_service (#PCDATA)>
+<!ELEMENT sales (#PCDATA)>
+
+
+<!ELEMENT research_and_development (vice_president_RandD,research,develop)>
+<!ELEMENT vice_president_RandD (#PCDATA)>
+<!ELEMENT research (#PCDATA)>
+<!ELEMENT develop (#PCDATA)>
+
+<!ELEMENT development (web_development,mob_development)>
+<!ELEMENT web_development (team)+>
+<!ELEMENT mob_development (team)+>
+<!ATTLIST web_development prj_mgr CDATA #REQUIRED>
+<!ATTLIST mob_development prj_mgr CDATA #REQUIRED>
+
+<!ELEMENT team (manager,developer+,intern?)>
+<!ATTLIST team project_id IDREF #IMPLIED>
+<!ATTLIST team web_dev_id CDATA #IMPLIED>
+<!ATTLIST team mob_dev_id CDATA #IMPLIED>
+
+<!ELEMENT manager (#PCDATA)>
+<!ELEMENT developer (#PCDATA)>
+<!ELEMENT intern (#PCDATA)>
+
+<!ELEMENT project (name,details)>
+<!ATTLIST project project_id ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT details (#PCDATA)>
+
+
